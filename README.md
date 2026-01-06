@@ -1,5 +1,5 @@
 
-# Devportfolio
+# Aldrey Canlas Portfolio Website
 
 This is my developer portfolio website.
 
