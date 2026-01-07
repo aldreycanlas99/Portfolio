@@ -48,7 +48,7 @@ const MobileNav = () => {
             href="/#"
             className={`block ${splash.className} dark:text-purple-200 text-purple-950 `}
           >
-            Kapil Badokar
+            Aldrey Canlas
           </a>
         </h1>
 

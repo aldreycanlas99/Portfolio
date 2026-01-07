@@ -75,9 +75,9 @@ const Intro = () => {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   const roles = [
-    "React Native Engineer",
-    "Full-Stack Developer",
-    "Mobile Architect",
+    "BIM Industry",
+    "AI/ML",
+    "Architect Engineer",
   ];
 
   return (
@@ -135,7 +135,7 @@ const Intro = () => {
         className="text-4xl md:text-6xl font-bold tracking-tighter !leading-tight"
         variants={itemVariants}
       >
-        Kapil Badokar
+        Aldrey Canlas
       </motion.h1>
 
       <motion.div
@@ -156,7 +156,7 @@ const Intro = () => {
         className="max-w-2xl mx-auto mb-10 text-lg text-gray-700 dark:text-slate-300"
         variants={itemVariants}
       >
-        Building innovative solutions with React Native, Flutter & Next.js.
+        Building production-grade AI and BIM automation systems that combine Revit API, generative AI, and scalable software architecture to turn real-world architectural constraints into intelligent, usable design tools.
       </motion.p>
 
       {/* --- REFINED ACTION GROUP --- */}
@@ -177,7 +177,7 @@ const Intro = () => {
         </ActionButton>
 
         <ActionButton
-          href="/CV.pdf"
+          href="/resume.pdf"
           download
           className="bg-white text-gray-800 hover:bg-gray-50 borderBlack dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/20"
         >
@@ -187,12 +187,12 @@ const Intro = () => {
 
         <div className="flex gap-4">
           <SocialLink
-            href="https://www.linkedin.com/in/kapilbadokar/"
+            href="https://www.linkedin.com/in/aldrey-canlas-815a03380"
             icon={BsLinkedin}
             tooltip="LinkedIn"
           />
           <SocialLink
-            href="https://github.com/Kapil619"
+            href="https://github.com/aldreycanlas99"
             icon={FaGithubSquare}
             tooltip="GitHub"
           />

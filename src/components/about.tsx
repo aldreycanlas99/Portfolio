@@ -11,18 +11,18 @@ const About = () => {
   const highlights = [
     {
       icon: "carbon:development",
-      title: "1.5+ Years",
+      title: "10 Years",
       subtitle: "Experience",
     },
     {
       icon: "ion:rocket-outline",
-      title: "4+",
+      title: "7+",
       subtitle: "Deployed Apps",
     },
     {
       icon: "bi:stack",
       title: "Full-Stack",
-      subtitle: "Web & Mobile",
+      subtitle: "BIM & AI/ML & Architect",
     },
   ];
 
@@ -36,14 +36,6 @@ const About = () => {
       id="about"
     >
       <SectionHeading text="About me"></SectionHeading>
-
-      <p className="text-lg mb-10 -mt-4">
-        I build{" "}
-        <span className="font-bold text-amber-600 dark:text-amber-400">
-          pixel-perfect, robust applications
-        </span>{" "}
-        for both web and mobile platforms.
-      </p>
 
       {/* --- HIGHLIGHT CARDS --- */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
@@ -70,13 +62,13 @@ const About = () => {
       </div>
 
       <p className="text-left sm:text-center">
-        As a recent engineering graduate, I've immersed myself in the startup
-        ecosystem, where I've honed my skills in{" "}
-        <span className="font-semibold">
-          React Native, Next.js, and Flutter
-        </span>
-        . My passion lies in solving complex problems and turning ideas into
-        high-quality, scalable code that makes a real impact.
+        I'm a Senior BIM & Revit API Engineer with 10+ years of experience building productiongrade automation tools for
+        architectural, engineering, and construction workflows. Specialized in developing custom Revit plugins using C#
+        and the Revit API to automate modeling, data extraction, and cross-platform BIM interoperability (IFC, DWG,
+        JSON). Proven background integrating generative AI, computational design, and cloud services into BIM
+        environments to reduce manual effort, improve design accuracy, and accelerate delivery timelines. Strong
+        collaborator with architects, BIM managers, and product teams, translating real-world design constraints into
+        scalable, maintainable software solutions.
       </p>
     </motion.section>
   );

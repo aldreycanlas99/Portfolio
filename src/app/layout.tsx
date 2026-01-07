@@ -12,8 +12,8 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kapil Badokar | Portfolio",
-  description: "Kapil Badokar's portfolio website. Built with Next.js.",
+  title: "Aldrey Canlas",
+  description: "Aldrey's portfolio website. Built with Next.js.",
 };
 
 export default function RootLayout({

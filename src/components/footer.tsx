@@ -12,10 +12,10 @@ const Footer = () => {
     <>
       <footer className="mb-10 px-4 text-center text-gray-500">
         <small className="mb-2 block  text-xs ">
-          &copy; {new Date().getFullYear()} Kapil. All Rights reserved.
+          &copy; {new Date().getFullYear()} Aldrey. All Rights reserved.
         </small>
         <div className=" flex flex-row justify-center gap-2 ">
-          <Link target="_blank" href={"https://github.com/Kapil619"}>
+          <Link target="_blank" href={"https://github.com/aldreycanlas99"}>
             <Icon
               className="cursor-pointer hover:text-blue-500"
               width={25}
@@ -25,7 +25,7 @@ const Footer = () => {
           </Link>
           <Link
             target="_blank"
-            href={" https://www.linkedin.com/in/kapil-badokar/"}
+            href={"https://www.linkedin.com/in/aldrey-canlas-815a03380"}
           >
             <Icon
               className="cursor-pointer hover:text-blue-500"
@@ -34,7 +34,7 @@ const Footer = () => {
               icon={"mingcute:linkedin-line"}
             />
           </Link>
-          <Link target="_blank" href={"https://www.instagram.com/_kapil619/"}>
+          <Link target="_blank" href={"https://www.instagram.com/aldreycanlas/"}>
             <Icon
               className="cursor-pointer hover:text-blue-500"
               width={25}
@@ -42,7 +42,7 @@ const Footer = () => {
               icon={"fa-brands:instagram"}
             />
           </Link>
-          <Link target="_blank" href={"https://twitter.com/kapil_badokar"}>
+          <Link target="_blank" href={"https://twitter.com/aldreycanlas"}>
             <Icon
               className="cursor-pointer hover:text-blue-500"
               width={25}
