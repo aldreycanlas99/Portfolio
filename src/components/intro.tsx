@@ -8,6 +8,7 @@ import React from "react";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
+import BackgroundImg from "/public/background.png"
 
 // Animation variants for the container and its children
 const containerVariants = {
@@ -89,6 +90,13 @@ const Intro = () => {
       initial="hidden"
       animate="visible"
     >
+      <Image
+        className="absolute inset-0 -z-10 bg-cover bg-center opacity-50 dark:opacity-15"
+        src={BackgroundImg}
+        alt=""
+        style={{ width: "100%" }}
+        priority
+      />
       <motion.div variants={itemVariants} className="flex justify-center mb-6">
         <div className="flex items-center gap-2 bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-300 rounded-full px-4 py-1 text-sm font-semibold">
           <span className="relative flex h-3 w-3">
@@ -96,38 +104,6 @@ const Intro = () => {
             <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
           </span>
           Available for new opportunities
-        </div>
-      </motion.div>
-
-      <motion.div
-        variants={itemVariants}
-        className="flex items-center justify-center mb-4"
-      >
-        <div className="relative">
-          <Image
-            src={
-              "https://images.unsplash.com/photo-1596727147705-61a532a659bd?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            }
-            width={192}
-            height={192}
-            quality={95}
-            priority={true}
-            alt="My Image"
-            className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-          />
-          <motion.span
-            className="text-4xl absolute bottom-0 right-0"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.5,
-              duration: 0.7,
-            }}
-          >
-            👋
-          </motion.span>
         </div>
       </motion.div>
 

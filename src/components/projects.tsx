@@ -9,7 +9,7 @@ import SectionHeading from "./sectionHeading";
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
 
-  const [filter, setFilter] = useState<"All" | "Web" | "Mobile">("All");
+  const [filter, setFilter] = useState<"All" | "Residential" | "Commercial">("All");
 
   const initialProjectsToShow = 3;
   const [projectsToShow, setProjectsToShow] = useState(initialProjectsToShow);
@@ -19,7 +19,7 @@ export default function Projects() {
     return project.category === filter;
   });
 
-  const handleFilterChange = (newFilter: "All" | "Web" | "Mobile") => {
+  const handleFilterChange = (newFilter: "All" | "Residential" | "Commercial") => {
     setFilter(newFilter);
     setProjectsToShow(initialProjectsToShow);
   };
@@ -47,16 +47,16 @@ export default function Projects() {
           All
         </button>
         <button
-          className={`filter-btn ${filter === "Web" ? "active" : ""}`}
-          onClick={() => handleFilterChange("Web")}
+          className={`filter-btn ${filter === "Residential" ? "active" : ""}`}
+          onClick={() => handleFilterChange("Residential")}
         >
-          Web
+          Residential
         </button>
         <button
-          className={`filter-btn ${filter === "Mobile" ? "active" : ""}`}
-          onClick={() => handleFilterChange("Mobile")}
+          className={`filter-btn ${filter === "Commercial" ? "active" : ""}`}
+          onClick={() => handleFilterChange("Commercial")}
         >
-          Mobile
+          Commercial
         </button>
       </div>
 

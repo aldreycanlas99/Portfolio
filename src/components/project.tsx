@@ -4,7 +4,6 @@ import { projectsData } from "@/lib/data";
 import { Icon } from "@iconify/react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { useRef } from "react";
 
 type ProjectProps = (typeof projectsData)[number];
@@ -14,7 +13,6 @@ export default function Project({
   description,
   tags,
   imageUrl,
-  githubLink,
   deploymentLink,
   category,
 }: ProjectProps) {
@@ -44,14 +42,6 @@ export default function Project({
           <div className="flex items-start justify-between gap-4">
             <h3 className="text-2xl font-semibold">{title}</h3>
             <ul className="flex flex-shrink-0 gap-2">
-              <Link target="_blank" href={githubLink}>
-                <Icon
-                  className="cursor-pointer hover:text-blue-500"
-                  width={25}
-                  height={25}
-                  icon={"ri:github-line"}
-                />
-              </Link>
               <a target="_blank" href={deploymentLink}>
                 <Icon
                   className="cursor-pointer hover:text-blue-500"
@@ -77,7 +67,7 @@ export default function Project({
           </ul>
         </div>
 
-        {category === "Mobile" ? (
+        {/* {category === "Commercial" ? (
           <div
             className="absolute top-1/2 -translate-y-1/2 w-[9rem] h-[19rem] bg-gray-800 dark:bg-gray-900 rounded-[1.75rem] border-8 border-gray-800 dark:border-gray-900 overflow-hidden shadow-xl transition-transform duration-500 [transform-style:preserve-3d]
             hidden sm:block
@@ -97,7 +87,7 @@ export default function Project({
               className="w-full h-full object-cover"
             />
           </div>
-        ) : (
+        ) : ( */}
           <Image
             src={imageUrl}
             alt={title}
@@ -113,7 +103,7 @@ export default function Project({
             group-even:group-hover:rotate-2
             group-even:right-[initial] group-even:-left-40"
           />
-        )}
+        {/* )} */}
       </section>
     </motion.div>
   );

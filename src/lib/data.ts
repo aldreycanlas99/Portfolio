@@ -1,12 +1,9 @@
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
-import eshwayImg from '/public/eshway.jpg';
-import Fluttergram from '/public/fluttergram.png';
-import gamesdomImg from '/public/Gamesdom.png';
-import TrackerImg from '/public/issue-tracker.png';
-import PestRobot from '/public/pestrobot.png';
-import SeleniumBot from '/public/seleniumbot.png';
-import SmartPlug from '/public/smartplug.jpg';
+import CaniBuild from '/public/canibuild.webp';
+import NonLinear from '/public/nonlinear.png';
+import Landstack from '/public/landstack.jpg';
+import Civils from '/public/civils.png';
 import PaperAsh from '/public/paperash.png';
 
 
@@ -45,94 +42,64 @@ export const educationData = [
 
     {
         title: "Bachelor's Degree",
-        location: "PESMCOE, Pune",
+        location: "Philippines",
         description:
-            "I'm pursuing my bachelors degree in Electronics & Computer Engineering specialization in Data Science at PESMCOE Pune.",
+            "I'm pursuing my bachelors degree in Electronics & Computer Engineering specialization in Data Science at University of Santo Tomas.",
         icon: React.createElement(LuGraduationCap),
-        date: "2021 - 2025",
-    },
-    {
-        title: "HSC",
-        location: "High School, Pune, India",
-        description:
-            "Completed my high school education at Pune University with 95%.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2019 - 2021",
-    },
-    {
-        title: "SSC",
-        location: "SSGMES, Shegaon",
-        description:
-            "Completed my schooling at SSGM School Shegaon and passed SSC with 90%.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2009-2019",
+        date: "2011 - 2015",
     },
 ] as const;
 
 export const projectsData = [
     {
-        title: "Pest Identification",
-        description: "A React Native app controlling a Raspberry Pi robot for real-time pest detection using a YOLOv8 model deployed on AWS.",
-        tags: ["React Native", "YOLOv8", "AWS", "Raspberry Pi", "Flask"],
-        imageUrl: PestRobot,
-        githubLink: "https://github.com/Kapil619/PestDetection",
-        deploymentLink: "https://github.com/Kapil619/PestDetection",
-        category: "Mobile",
-    },
-    {
-        title: "EnergyIQ- Smart Plug",
-        description: "A cross-platform React Native app to monitor and control a custom-built ESP32 smart plug, featuring real-time data sync with Firebase.",
-        tags: ["React Native", "IoT", "ESP32", "Firebase", "Expo"],
-        imageUrl: SmartPlug,
-        githubLink: "https://github.com/Kapil619/SmartPlug",
-        deploymentLink: "https://github.com/Kapil619/SmartPlug",
-        category: "Mobile",
-    },
-    {
-        title: "GamesDom",
+        title: "CaniBuild",
         description:
-            "Created this React web app where users can search for games and see details about them. It uses the RAWG API.",
-        tags: ["React", "Typescript", "ChakraUI", "Tailwind",],
-        imageUrl: gamesdomImg,
-        githubLink: "https://github.com/Kapil619/GamesDom",
-        deploymentLink: "https://games-dom.vercel.app/",
-        category: "Web",
+            "Instant site feasibility, automated pre-permitting, and real-time 3D visualization for homes, ADUs, pools, sheds, garages, and more.",
+        tags: ["Revit", "BIM Automation", "PyTorch", "GenAI",],
+        imageUrl: CaniBuild,
+        deploymentLink: "https://canibuild.com/",
+        category: "Residential",
 
     },
     {
-        title: "Issue-Tracker",
-        description:
-            "Built a Nextjs Web app with SQL Database. Users can create ,update and delete issues faced by them. Can assign issues to other users & more.",
-        tags: ["Next.js", "Typescript", "SQL", "Tailwind", "Prisma"],
-        imageUrl: TrackerImg,
-        githubLink: "https://github.com/Kapil619/Issue-Tracker",
-        deploymentLink: "https://issue-tracker-kapil619.vercel.app/",
-        category: "Web",
+        title: "Nonlinear",
+        description: "Create AI workflows that can review, analyze, or execute repetitive construction-specific tasks like QA/QC, submittal review, estimating, proposals, and more.",
+        tags: ["HTML", "AI/ML", "JS", "CSS", "Flask"],
+        imageUrl: NonLinear,
+        deploymentLink: "https://www.nonlinear.build/",
+        category: "Commercial",
     },
     {
-        title: "FlutterGram",
-        description:
-            "FlutterGram is an Instagram clone built with Flutter. It has has multiple features like Posting, LiveFeed ,Likes/Comments,Explore-Section, Profile-Section.",
-        tags: ["Flutter", "Firebase", "Dart", "Provider"],
-        imageUrl: Fluttergram,
-        githubLink: "https://github.com/Kapil619/FlutterGram",
-        deploymentLink: "https://github.com/Kapil619/FlutterGram",
-        category: "Mobile",
+        title: "Civils.ai",
+        description: "Accurate AI-powered quantity takeoffs & measurements from PDF drawings. Use AI Agents to search & check your specs, rates & technical data.",
+        tags: ["BIM", "IFC", "USD", "DWG", "SAM3"],
+        imageUrl: Civils,
+        deploymentLink: "https://civils.ai/",
+        category: "Residential",
     },
     {
-        title: "Selenium-Bot",
-        description:
-            "It is an automated command line application created in Python + Selenium to get the best hotels of any area with their details from the www.booking.com website.",
-        tags: ["Selenium", "Python", "Webdriver"],
-        imageUrl: SeleniumBot,
-        githubLink: "https://github.com/Kapil619/SeleniumBot",
-        deploymentLink: "https://github.com/Kapil619/SeleniumBot",
-        category: "Web",
+        title: "Landstack",
+        description: "Powerful GIS system enhanced by industry-leading AI tools that let you query and report on any piece of land.",
+        tags: ["TensorFlow", "Revit API", "LangChain", "Kubernetes", "HuggingFace"],
+        imageUrl: Landstack,
+        deploymentLink: "https://www.landstack.co.uk/",
+        category: "Residential",
     },
-
 ] as const;
 
 export const skillsData = [
+    { name: "AI", src: "tabler:ai" },
+    { name: "Machine Learning", src: "carbon:machine-learning" },
+    { name: "Revit", src: "simple-icons:autodeskrevit" },
+    { name: "3D Modeling", src: "arcticons:3d-modeling-app" },
+    { name: "AutoCAD", src: "arcticons:autocad" },
+    { name: "IFC/DWG", src: "arcticons:dwg-fastview" },
+    { name: "LangChain", src: "simple-icons:langchain" },
+    { name: "PyTorch", src: "logos:pytorch" },
+    { name: "TensorFlow", src: "logos:tensorflow" },
+    { name: "OpenAI", src: "logos:openai" },
+    { name: "Gemini", src: "logos:google-gemini" },
+    { name: "Kubernetes", src: "skill-icons:kubernetes" },
     { name: "HTML", src: "skill-icons:html" },
     { name: "CSS", src: "skill-icons:css" },
     { name: "JavaScript", src: "skill-icons:javascript" },
